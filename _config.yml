@@ -1,0 +1,18 @@
+gems: [bourbon, neat, bitters, refills]
+
+# Structure configuration
+source: source
+destination: build
+
+assets:
+  cachebust: soft
+
+# Site settings
+title: Stokes Drift
+description: Service platform for the modern world
+
+# Name of project on Github
+baseurl: /
+
+# Build settings
+markdown: kramdown
