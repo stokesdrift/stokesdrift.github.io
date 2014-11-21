@@ -1,4 +1,4 @@
-gems: [bourbon, neat, bitters, refills]
+gems: [bourbon, neat, bitters]
 
 # Structure configuration
 source: source
@@ -12,7 +12,7 @@ title: Stokes Drift
 description: Service platform for the modern world
 
 # Name of project on Github
-baseurl: /
+baseurl:
 
 # Build settings
 markdown: kramdown
