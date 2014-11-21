@@ -5,28 +5,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="utf-8">
+      <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width initial-scale=1" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
       <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-      <meta name="description" content="{{ site.description }}">
-      <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+      <meta name="description" content="{{ site.description }}" />
+      <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
 
-      <link rel="stylesheet" href="{% stylesheet application %}">
+      {% stylesheet application %}
   </head>
 
   <body>
-    <!-- on all pages -->
     <div id="nav">
       header bar with navigation
     </div>
-    <!-- end all pages -->
 
-    <!-- need to break out into tech layout, marketing, etc... -->
+    <!-- need to break out into tech layout, marketing, etc -->
     {{ content }}
 
-    <!-- on all pages -->
 
     <div id="call_to_action">
       call to action button / text
@@ -36,9 +33,7 @@
       misc links and social linking
     </div>
 
-
-
-    <script type="text/javascript" src="{% javascript application %}"></script>
+    {% javascript application %}
   </body>
 
 </html>
