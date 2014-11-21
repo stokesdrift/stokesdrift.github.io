@@ -7,6 +7,14 @@ destination: build
 assets:
   cachebust: soft
 
+  # js_compressor:  uglifier
+  # css_compressor: sass
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    #- _vendors/bootstrap/stylesheets
+    #- _vendors/bootstrap/javascripts
 # Site settings
 title: Stokes Drift
 description: Service platform for the modern world
