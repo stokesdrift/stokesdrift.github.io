@@ -1,22 +1,23 @@
 
 
-$large_font: 'SimSun', serif
-$long_text_font: 'Constania', serif
+$large_font: 'Helvetica Neue', sans serif
+$long_text_font: 'Helvetica Neue', serif
 
 
 // font-family: $long-text-font
 // font-size: 1em
 // line-height: 1.5em
 
-@mixin large_font
+@mixin large_font($large_font_size: 1.5em)
   padding: 0 1px
-  font-size: 1.5em
+  font-size: $large_font_size
+  font-weight: 300
   // color:
   font-family: $large_font
-
 
 @mixin long_font
   padding: 0 1px
   font-size: 1.2em
+  font-weight: 100
   // color:
   font-family: $long_text_font

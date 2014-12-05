@@ -1,20 +1,20 @@
 
 section
-  @include outer-container
+  +outer-container
   aside
-    @include span-columns(3)
+    +span-columns(3)
   article
-    @include span-columns(9)
+    +span-columns(9)
 
 
 #call_to_action
-  @include outer-container
+  +outer-container
 
   .message
-    @include span-columns(6)
+    +span-columns(6)
   .button
-    @include span-columns(6)
-    @include omega()
+    +span-columns(6)
+    +omega()
 
 .hero
   $hero-background-top: #7F99BE
@@ -23,7 +23,7 @@ section
   $gradient-angle: 10deg
   $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'
 
-  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll)
+  +background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll)
 
   background-repeat: no-repeat
   background-position: top
@@ -49,17 +49,15 @@ section
         font-size: 1.6em
         margin-bottom: .5em
 
-        @include media($large-screen)
+        +media($large-screen)
           font-size: 1.8em
 
       p
-        font-family: $serif
         margin: auto
         margin-bottom: 3em
-        font-weight: 200
         line-height: 1.4em
 
-        @include media($large-screen)
+        +media($large-screen)
           font-size: 1.1em
           max-width: 40%
 
@@ -70,20 +68,20 @@ section
 
 // change ".three-col-bullet" class to this for two bullet layout
   .two-col-bullet
-    @include media($large-screen)
-      @include span-columns(6)
-      @include omega(2n)
+    +media($large-screen)
+      +span-columns(6)
+      +omega(2n)
 
   .three-col-bullet
-    @include media($large-screen)
-      @include span-columns(4)
-      @include omega(3n)
+    +media($large-screen)
+      +span-columns(4)
+      +omega(3n)
 
 // change ".three-col-bullet" class to this for four bullet layout
   .four-col-bullet
-    @include media($large-screen)
-      @include span-columns(3)
-      @include omega(4n)
+    +media($large-screen)
+      +span-columns(3)
+      +omega(4n)
 
   .bullet-icon
     float: left
