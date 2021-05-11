@@ -1,0 +1,21 @@
+<!-- sidebar start -->
+<aside>
+    <ul>
+        {{ $currentPage := . }}
+        {{if ne .Params.menu_section nil}}
+            {{ range .CurrentSection.Pages.GroupByParam "menu_section" }}
+            <li class="{{if eq $currentPage.Title .Key}}active{{ end }} menusection">
+                <span>{{ .Key}}</span>
+            </li>
+            <ul class="sub-menu">
+
+                {{ range .Pages }}
+                <li class="{{if eq $currentPage.Title .Title}}active{{ end }}">
+                    <a href="{{ .Permalink }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        {{end}}
+    </ul>
+</aside>

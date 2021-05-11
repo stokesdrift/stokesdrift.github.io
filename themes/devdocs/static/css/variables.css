@@ -1,0 +1,52 @@
+
+:root {
+  --color-base-purple-light: #f22e8a;
+  --color-base-purple-medium: #a62d7b;
+  --color-base-purple-dark: #73265e;
+  --color-base-blue-light: #a0d9d9;
+  --color-base-blue-medium: #49868c;
+  --color-base-blue-dark: #252d59;
+  --color-base-green-light: #d8d890;
+  --color-base-green-medium: #babf15;
+  --color-base-green-dark: #467302;
+  --color-base-red-light: #f0c078;
+  --color-base-red-medium: #d97904;
+  --color-base-red-dark: #bf0404;
+  --color-base-gray-light: #d8d8d8;
+  --color-base-gray-medium: #a6a6a6;
+  --color-base-gray-dark: #262621;
+  --color-base-black: #000000;
+  --color-primary: #d8d8d8;
+  --color-secondary: #262621;
+  --color-action-primary: #d8d8d8;
+  --color-action-secondary: #262621;
+  --color-action-tertiary: #a6a6a6;
+  --color-font-base: #000000;
+  --color-font-primary: #d8d8d8;
+  --color-font-secondary: #262621;
+  --color-font-tertiary: #d8d8d8;
+  --color-brand-primary: #ea4335;
+  --color-brand-secondary: #34a853;
+  --button-border-radius: 4px;
+  --button-text-size: 1px;
+  --font-platform-system: Tahoma, Arial, "Helvetica Neue", sans;
+  --font-family-base: Roboto;
+  --font-family-headers: Staatliches;
+  --font-opensans-name: Open Sans;
+  --font-opensans-ttf: assets/fonts/OpenSans-Regular.ttf;
+  --font-chunkfive-name: ChunkFive;
+  --font-chunkfive-ttf: assets/fonts/Chunk-Five-Print.ttf;
+  --font-marker-name: PermanentMarker;
+  --font-marker-ttf: assets/fonts/PermanentMarker-Regular.ttf;
+  --font-raleway-name: Raleway;
+  --font-raleway-ttf: assets/fonts/Raleway-Regular.ttf;
+  --font-roboto-name: Roboto;
+  --font-roboto-ttf: assets/fonts/Roboto-Regular.ttf;
+  --font-staatliches-name: Staatliches;
+  --font-staatliches-ttf: assets/fonts/Staatliches-Regular.ttf;
+  --size-font-small: 0.75px;
+  --size-font-medium: 1px;
+  --size-font-large: 2px;
+  --size-font-base: 1px;
+
+}
