@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/variables.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/global.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/syntax.css'>
+</head>
+    <body>
+        
+            <nav class="wrapper navigation drop-shadow">
+    <div><a href="/"><img src="/assets/logo.png" /></a><span class="title">drift-server</span>
+    </div>
+    <div class="link-nav">
+        
+        <a href="/drift-server/" alt="drift server ">drift server</a>
+        
+        <a href="/moka/" alt="moka ">moka</a>
+        
+    </div>
+</nav>
+<main aria-role="main" class="wrapper">
+        
+        <div id="content" class="drift-server">
+            
+
+<aside>
+    <ul>
+        
+        
+            
+            <li class=" menusection">
+                <span>setup</span>
+            </li>
+            <ul class="sub-menu">
+
+                
+                <li class="">
+                    <a href="/drift-server/getting-started/">Getting Started</a>
+                </li>
+                
+                <li class="">
+                    <a href="/drift-server/configuration/">Configuration</a>
+                </li>
+                
+                <li class="active">
+                    <a href="/drift-server/running/">Running</a>
+                </li>
+                
+            </ul>
+            
+        
+    </ul>
+</aside>
+<section id="main">
+    <h1 id="title">Running</h1>
+    <article>
+        <p>In your project root directory run:</p>
+<p><code>stokesdrift</code></p>
+<p>By default it runs the server on port <code>8888</code>, open a browser and go to <a href="http://localhost:8888">http://localhost:8888</a>.</p>
+<p>If you want to test something from the stokesdrift github project you can run <code>run STOKES_DRIFT_OPTS=&quot;-r src/test/resources/examples&quot; gradle run</code>. Where <code>src/test/resources/examples</code> is your ruby project folder.</p>
+<p>Alternatively, you can run it in docker. To make a docker container, see <a href="https://github.com/stokesdrift/example-sinatra">Example Project</a> for an example on doing this.</p>
+<p>Startup options:</p>
+<ul>
+<li><code>-r</code> - (optional) Root path to the application, defaults to the current directory</li>
+<li><code>-c</code> - (optional) Configuration file, defaults to <code>drift_config.yml</code></li>
+</ul>
+
+    </article>
+</section>
+
+        </div>
+
+        
+</main>
+<footer class="wrapper">
+        <p>
+            &copy; 2021 
+            <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Creative Commons Attribution</a>;
+            please attribute properly and link back.
+            <br /><br />
+            <a href="https://github.com/stokesdrift/" target="_blank"><img src="/assets/GitHub-Mark-32px.png"></a>
+        </p>
+</footer>
+
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stokes drift</title>
+    <link>/</link>
+    <description>Recent content on stokes drift</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started</title>
+      <link>/drift-server/getting-started/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/drift-server/getting-started/</guid>
+      <description>There are a couple ways to get started, the easiest to get going is starting with the gem install.
+To install the gem:
+ gem install stokesdrift  Next</description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>/moka/getting-started/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/moka/getting-started/</guid>
+      <description>First add moka to your java project via:
+For gradle use:
+implementation group: &amp;#39;org.stokesdrift&amp;#39;, name: &amp;#39;moka&amp;#39;, version: &amp;#39;0.1.1&amp;#39; For maven use:
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.stokesdrift&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;moka&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.1.1&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; See mvnrepository for other dependency management styles.
+Next</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>/drift-server/configuration/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/drift-server/configuration/</guid>
+      <description>In order to run your rack application within the drift server you will need to create a drift_config.yml file at the root of your project.
+Here is a sample configuration file:
+server: port: 8888 host: 127.0.0.1 apps: - app_file: config.ru name: &amp;#34;Example&amp;#34; url_path: &amp;#34;/&amp;#34; The main parts of the configuration file is as follows:
+ server - the server specific configurations apps - the apps that will run on this server and where they are located  The server section consists of:</description>
+    </item>
+    
+    <item>
+      <title>Usage</title>
+      <link>/moka/usage/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/moka/usage/</guid>
+      <description>The idea behind moka is to provide a way to override property file defaults with environment variables passed to the application.
+For instance, take this example property file:
+my.property=defaultfordev And say its located under src/java/resources/config called app.properties.
+In your java code you would init your config with moka via:
+Configuration config = new Configuration(&amp;#34;app&amp;#34;); config.addLoadPath(&amp;#34;/config&amp;#34;); config.init(); And at runtime if you wanted to override the value with an environment variable you would run export MY_PROPERTY=propertyforprod.</description>
+    </item>
+    
+    <item>
+      <title>Running</title>
+      <link>/drift-server/running/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/drift-server/running/</guid>
+      <description>In your project root directory run:
+stokesdrift
+By default it runs the server on port 8888, open a browser and go to http://localhost:8888.
+If you want to test something from the stokesdrift github project you can run run STOKES_DRIFT_OPTS=&amp;quot;-r src/test/resources/examples&amp;quot; gradle run. Where src/test/resources/examples is your ruby project folder.
+Alternatively, you can run it in docker. To make a docker container, see Example Project for an example on doing this.</description>
+    </item>
+    
+  </channel>
+</rss>

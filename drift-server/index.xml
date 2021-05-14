@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>drift server on stokes drift</title>
+    <link>/drift-server/</link>
+    <description>Recent content in drift server on stokes drift</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/drift-server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started</title>
+      <link>/drift-server/getting-started/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/drift-server/getting-started/</guid>
+      <description>There are a couple ways to get started, the easiest to get going is starting with the gem install.
+To install the gem:
+ gem install stokesdrift  Next</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>/drift-server/configuration/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/drift-server/configuration/</guid>
+      <description>In order to run your rack application within the drift server you will need to create a drift_config.yml file at the root of your project.
+Here is a sample configuration file:
+server: port: 8888 host: 127.0.0.1 apps: - app_file: config.ru name: &amp;#34;Example&amp;#34; url_path: &amp;#34;/&amp;#34; The main parts of the configuration file is as follows:
+ server - the server specific configurations apps - the apps that will run on this server and where they are located  The server section consists of:</description>
+    </item>
+    
+    <item>
+      <title>Running</title>
+      <link>/drift-server/running/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/drift-server/running/</guid>
+      <description>In your project root directory run:
+stokesdrift
+By default it runs the server on port 8888, open a browser and go to http://localhost:8888.
+If you want to test something from the stokesdrift github project you can run run STOKES_DRIFT_OPTS=&amp;quot;-r src/test/resources/examples&amp;quot; gradle run. Where src/test/resources/examples is your ruby project folder.
+Alternatively, you can run it in docker. To make a docker container, see Example Project for an example on doing this.</description>
+    </item>
+    
+  </channel>
+</rss>
