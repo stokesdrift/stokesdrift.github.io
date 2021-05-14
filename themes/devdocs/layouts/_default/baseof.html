@@ -2,11 +2,17 @@
 <html>
     {{ partial "head.html" . }}
     <body>
-        {{ partial "header.html" . }}
-        
+        {{ if .IsHome }}
+            {{ partial "navigation.html" . }}
+            {{ block "hero" . }}{{ end }}
+            <main aria-role="main" class="wrapper">
+        {{ else }}
+            {{ partial "header.html" . }}
+        {{end}}
         <div id="content" class="{{.Section}}">
-        {{ block "main" . }}{{ end }}
+            {{ block "main" . }}{{ end }}
         </div>
+
         {{ partial "footer.html" . }}
     </body>
 </html>

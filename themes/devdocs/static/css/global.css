@@ -1,6 +1,6 @@
 /* TODO repace with farm.style once that is updated */
 
-@import url('https://fonts.googleapis.com/css2?Raleway:wght@300&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?Raleway:wght@300&family=Oswald:wght@500&display=swap');
 
 .wrapper {
     display: grid;
@@ -20,16 +20,19 @@
 
 #content.moka, #content.drift-server {
     display: inline-flex;
+    padding-top: 20px;
 }   
 
 section {
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
 #content aside {
     padding-left: 8px;
     min-width: 250px;
-    border-right: 1px solid var(--color-base-blue-dark);
+    border-top: 5px solid var(--color-base-blue-medium);
+    background-color: white;
+    border-radius: 4px;
 }
 
 aside > ul {
@@ -49,7 +52,7 @@ footer {
 }
 
 h1, h2 {
-    font-family: 'Staatliches', cursive;
+    font-family: 'Oswald', cursive;
     letter-spacing: .1em;
     color: var(--color-base-blue-dark);
 }
@@ -76,14 +79,15 @@ li.menusection {
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    background-color: var(--color-base-blue-light);
+    background-color:  var(--color-base-gray-light);
 }
 
 nav {
-    background-color: var(--color-primary);
+    background-color: var(--color-base-blue-light);
+    /* background-color: var(--color-primary); */
     padding-top: 4px;
     padding-bottom: 4px;
-    border-bottom: 4px solid var(--color-base-blue-dark);
+    font-family: 'Oswald', sans-serif;
 }
 
 nav div {
@@ -93,8 +97,33 @@ nav div {
 nav span {
     padding-left: 100px;
     text-align: right;
-    font-family: 'Staatliches', cursive;
-    letter-spacing: .5em;
+    /* letter-spacing: .5em; */
     font-size: 3em;
     color: var(--color-base-blue-medium);
+}
+
+
+.hero {
+    background-color: var(--color-base-blue-light);    
+}
+
+.hero .text-center-block {
+    text-align: center;
+    display: block;
+}
+
+.link-nav {
+    text-align: right;
+    font-variant: small-caps;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.drop-shadow {
+    box-shadow: 0 2px 5px 2px var(--color-base-gray-medium);
+    margin-bottom: 10px;
+}
+
+.link-nav a {
+    padding-right: 8px;
 }

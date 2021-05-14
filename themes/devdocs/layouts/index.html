@@ -1,24 +1,20 @@
-{{ define "main" }}
-<h1>{{.Title}}</h1>
-{{ with .Params.subtitle }}
-<span class="subtitle">{{.}}</span>
+{{ define "hero" }}
+
+<div class="hero wrapper">
+    <section class="text-center-block">
+    <h1>{{.Title}}</h1>
+    {{ with .Params.subtitle }}
+    <span class="subtitle">{{.}}</span>
+    {{ end }}
+    {{.Content}}
+    </section>
+
+</div>
 {{ end }}
 
-{{.Content}}
+{{ define "main" }}
 
 <div>
-    <ul id="sections">
-        {{ range $name, $taxonomy := .Site.Sections }}
-        <li>
-            <h1 itemprop="name"><a href="{{$taxonomy.Permalink}}" alt="{{$taxonomy.Title}} ">{{$taxonomy.Title}}</a></h1>
-            {{ range $pageName, $page := $taxonomy.Pages }}
-            <a href="{{.Permalink}}" alt="{{.Title}} ">{{.Title}}</a>
-            {{ end }}
-        </li>
-        {{ end }}
-    </ul>
-    {{ range first 10 .Site.RegularPages }}
-    {{ .Render "summary"}}
-    {{ end }}
+
 </div>
 {{ end }}

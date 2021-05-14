@@ -15,3 +15,9 @@ By default it runs the server on port `8888`, open a browser and go to [http://l
 If you want to test something from the stokesdrift github project you can run `run STOKES_DRIFT_OPTS="-r src/test/resources/examples" gradle run`. Where `src/test/resources/examples` is your ruby project folder.
 
 Alternatively, you can run it in docker. To make a docker container, see [Example Project](https://github.com/stokesdrift/example-sinatra) for an example on doing this.
+
+
+Startup options:
+
+* `-r` - (optional) Root path to the application, defaults to the current directory
+* `-c` - (optional) Configuration file, defaults to `drift_config.yml`

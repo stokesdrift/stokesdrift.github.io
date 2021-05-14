@@ -1,0 +1,9 @@
+<nav class="wrapper navigation {{if not .IsHome}}drop-shadow{{end}}">
+    <div><a href="/"><img src="/assets/logo.png" /></a><span class="title">{{.Section}}</span>
+    </div>
+    <div class="link-nav">
+        {{ range $name, $taxonomy := .Site.Sections }}
+        <a href="{{$taxonomy.Permalink}}" alt="{{$taxonomy.Title}} ">{{$taxonomy.Title}}</a>
+        {{ end }}
+    </div>
+</nav>
